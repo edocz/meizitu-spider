@@ -1,0 +1,28 @@
+{
+  "name": "meizitu-spider",
+  "version": "1.0.0",
+  "description": "meizitu.com spider ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edocz/meizitu-spider.git"
+  },
+  "keywords": [
+    "meizitu",
+    "spider"
+  ],
+  "author": "z",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edocz/meizitu-spider/issues"
+  },
+  "homepage": "https://github.com/edocz/meizitu-spider#readme",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "cheerio": "^0.22.0",
+    "request": "^2.79.0"
+  }
+}
