@@ -26,10 +26,9 @@ findPageLinks().each(function (pageLink) {
     if (undefined === link || link.indexOf('uploads') === -1) return;
     var fileName = link.substring(link.indexOf('uploads') + 8, link.length).replace(/[a\/]/g,'');
     var file = 'pics/' + fileName;
-    request(link).pipe(fs.createWriteStream(file))
-      .on('error', function(err) {
-        console.log(err)
-      });
+    request(link).on('error', function(err) {
+      console.log(err)
+    }).pipe(fs.createWriteStream(file));
   });
 });
 
